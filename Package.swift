@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "PerfectService",
+    name: "Perfect_Service",
     dependencies: [
         .Package(url: "https://github.com/PerfectlySoft/Perfect-HTTPServer.git", majorVersion: 2, minor: 0),
 	.Package(url:"https://github.com/PerfectlySoft/Perfect-Mustache.git", majorVersion: 2, minor: 0), //for http(s) upload file
