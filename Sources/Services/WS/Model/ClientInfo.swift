@@ -9,7 +9,7 @@
 import PerfectWebSockets
 import PerfectHTTP
 
-class ClientInfo {
+public class ClientInfo {
     var handler:WebSocketSessionHandler?
     var request:HTTPRequest?
     var socket:WebSocket?

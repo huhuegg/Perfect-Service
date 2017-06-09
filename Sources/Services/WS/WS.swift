@@ -10,6 +10,10 @@
 import PerfectWebSockets
 import PerfectThread
 
+
+public protocol WSProtocol {
+    func processRequestMessage(_ socket: WebSocket, command:WSCommand, data:[String:Any]?)
+}
 public class WS {
     static var ws = WS()
     

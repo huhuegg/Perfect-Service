@@ -14,12 +14,12 @@ let kWebsocketCommandName = "cmd"
 let kWebsocketDataName = "data"
 let kWebsocketCodeName = "code"
 let kWebsocketMsgName = "msg"
-class WebSocketsHandler: WebSocketSessionHandler {
+public class WebSocketsHandler: WebSocketSessionHandler {
     //客户端与服务器协议匹配
-    var socketProtocol: String? = ""
+    public var socketProtocol: String? = ""
     
     // 连接建立后handleSession立即被调用
-    func handleSession(request: HTTPRequest, socket: WebSocket) {
+    public func handleSession(request: HTTPRequest, socket: WebSocket) {
         
         WS.instance.addClientIfNeed(self, request: request, socket: socket) { (isSuccess) in
             
