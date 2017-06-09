@@ -25,7 +25,7 @@ public class HTTPService {
         self.server = HTTPServer()
         self.routes = Routes()
     }
-    convenience init(localAddress:String = "0.0.0.0", port:UInt16 = 8080, documentRoot:String = "~/webroot") {
+    public convenience init(localAddress:String = "0.0.0.0", port:UInt16 = 8080, documentRoot:String = "~/webroot") {
         self.init()
         server.serverAddress = localAddress
         server.serverPort = port
